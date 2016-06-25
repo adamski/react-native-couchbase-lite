@@ -23,8 +23,8 @@ RCT_EXPORT_METHOD(init:(RCTResponseSenderBlock)callback)
 {
     @try {
 
-        NSString* username = [NSString stringWithFormat:@"u%d", arc4random() % 100000000];
-        NSString* password = [NSString stringWithFormat:@"p%d", arc4random() % 100000000];
+        NSString* username = @"admin"; //[NSString stringWithFormat:@"u%d", arc4random() % 100000000];
+        NSString* password = @"password"; //[NSString stringWithFormat:@"p%d", arc4random() % 100000000];
 
         NSLog(@"Launching Couchbase Lite...");
         CBLManager* dbmgr = [CBLManager sharedInstance];
